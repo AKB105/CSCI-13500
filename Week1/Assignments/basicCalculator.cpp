@@ -16,7 +16,7 @@ int main(){
     std::string answer = "";
 
     while (running){
-        bool validResult = true;
+        bool valid_result = true;
 
         std::cout << "Enter a number: ";
         while(!(std::cin>> num1)){
@@ -63,7 +63,7 @@ int main(){
                 //skipping the line intended to show the result, since there is no result to display.
                     if (num2 == 0){
                         std::cout << "Sorry, division by 0 is undefined.\n";
-                        validResult = false;
+                        valid_result = false;
                         break;
                     }
                     result = num1 / num2;
@@ -74,12 +74,12 @@ int main(){
                     break;
                 default:
                     std::cout << "Invalid operation. Only use real numbers and the valid operators ([+] [-] [x] [*] [/] [%]).\n";
-                    validResult = false;
+                    valid_result = false;
                     break;
             }
 
         //3- The program outputs the final result and ask the user if they wanna do another operation or close the program.
-        if (validResult){
+        if (valid_result){
             std::cout << "The operation result is: " << result << std::endl;
         }
 
