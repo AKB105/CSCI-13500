@@ -25,6 +25,8 @@ int main(){
             std::cin.ignore(1000, '\n');
         }
 
+        std::cin.ignore(1000, '\n');
+
         do{
             std::cout << "Enter intended operation (ONLY [+] [-] [x] [*] [/] [%]): ";
             std::cin >> operation;
@@ -44,38 +46,40 @@ int main(){
             std::cin.ignore(1000, '\n');
         }
 
+        std::cin.ignore(1000, '\n');
+
         //2- The program reads user inputs and do the intended operation.
         //Note: "case 'X':" covers for the scneario of user inputing capitalized x
-            switch (operation){
-                case '+':
-                    result = num1 + num2;
-                    break;
-                case '-':
-                    result = num1 - num2;
-                    break;
-                case 'x':
-                case '*':
-                case 'X':
-                    result = num1 * num2;
-                    break;
-                case '/':
-                //2.1- BONUS: The if-statement handles division by zero, telling the user that is undefined and 
-                //skipping the line intended to show the result, since there is no result to display.
-                    if (num2 == 0){
-                        std::cout << "Sorry, division by 0 is undefined.\n";
-                        valid_result = false;
-                        break;
-                    }
-                    result = num1 / num2;
-                    break;
-                case '%':
-                //2.2- Since the modulo operator does not work with doubles, we use the fmod function from the cmath library.
-                    result = std::fmod(num1, num2);
-                    break;
-                default:
-                    std::cout << "Invalid operation. Only use real numbers and the valid operators ([+] [-] [x] [*] [/] [%]).\n";
+        switch (operation){
+            case '+':
+                result = num1 + num2;
+                break;
+            case '-':
+                result = num1 - num2;
+                break;
+            case 'x':
+            case '*':
+            case 'X':
+                result = num1 * num2;
+                break;
+            case '/':
+            //2.1- BONUS: The if-statement handles division by zero, telling the user that is undefined and 
+            //skipping the line intended to show the result, since there is no result to display.
+                if (num2 == 0){
+                    std::cout << "Sorry, division by 0 is undefined.\n";
                     valid_result = false;
                     break;
+                    }
+                result = num1 / num2;
+                break;
+            case '%':
+            //2.2- Since the modulo operator does not work with doubles, we use the fmod function from the cmath library.
+                result = std::fmod(num1, num2);
+                break;
+            default:
+                std::cout << "Invalid operation. Only use real numbers and the valid operators ([+] [-] [x] [*] [/] [%]).\n";
+                valid_result = false;
+                break;
             }
 
         //3- The program outputs the final result and ask the user if they wanna do another operation or close the program.
