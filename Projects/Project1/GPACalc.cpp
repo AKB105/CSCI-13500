@@ -163,6 +163,7 @@ int main() {
             running = false;
         }
     }
+    
 
     //8- Bid the user good-bye in their way out. Close program.
     std::cout << "Thank you for using the GPA Calculator. Goodbye!\n";
