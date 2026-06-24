@@ -171,5 +171,4 @@ int main(){
 
     //8- Bid the user good-bye in their way out. Close program.
     std::cout << "Thanks for playing 'Rock. Paper. Scissors!!' with us. Bye-Bye!! :D\n";
-
 }
