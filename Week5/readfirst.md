@@ -19,6 +19,6 @@ Please complete the follow check-list by their due dates.
 [ ] Submit Assignment 5.5 by 7/7 @ 11:59PM
 
 ## Recitation Tasks
-[ ]
+[ ] Come up with 3 STAR stories that show the following traits: Leadership, Teamwork, Problem-Solving  
 
 
