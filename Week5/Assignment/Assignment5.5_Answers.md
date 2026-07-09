@@ -37,6 +37,7 @@ After completing your predictions, compile and run the program to verify your an
 
 4. Draw the call stack while `addFive()` is executing.
 
+```text
     Top of stack
     +---------------+
     |   addFive()   |
@@ -48,6 +49,7 @@ After completing your predictions, compile and run the program to verify your an
     |   value = 10  |
     +---------------+
     Bottom of stack
+```
 
 5. What happens to `number` after the function returns?
 
@@ -81,6 +83,7 @@ After completing your predictions, compile and run the program to verify your an
 
 5. Draw the call stack while `investigate()` is executing.
     
+```text
     Top of Stack
     +-----------------------------+
     |       investigate()         |
@@ -93,6 +96,7 @@ After completing your predictions, compile and run the program to verify your an
     |         bonus = 5           |
     +-----------------------------+
     Bottom of Stack
+```
 
 ---
 
@@ -127,7 +131,8 @@ After completing your predictions, compile and run the program to verify your an
     If this was to happen, then the if condition would be true and the function would exit.
 
 6. Draw the call stack while `investigate()` is executing.
-    
+
+```text
     Top of Stack
     +-----------------------------+
     |       investigate()         |
@@ -139,6 +144,7 @@ After completing your predictions, compile and run the program to verify your an
     |         clue = 7            |
     +-----------------------------+
     Bottom of Stack
+```
 
 ---
 
@@ -151,7 +157,8 @@ After completing your predictions, compile and run the program to verify your an
     It will print out 29 in the `main()` function.
 
 2. Draw the call stack after each function call.
-    
+
+```text
     Top of Stack
     +--------------------+
     |       main()       |
@@ -159,6 +166,7 @@ After completing your predictions, compile and run the program to verify your an
     |     value = 29     |
     +--------------------+
     Bottom of Stack
+```
 
 3. Which function uses:
    - Pass by Copy? `int mysteryA()`
