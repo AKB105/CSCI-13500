@@ -1,3 +1,4 @@
+//This file is created to try out each function created within the custom data type.
 #include "linkedlist.hpp"
 #include <iostream>
 
@@ -17,6 +18,8 @@ int main(){
 
     myList.PrintValues();
     myList.PrintAddresses();
+
+    myList.MergeIntertwine()
 
     return 0;
 }
